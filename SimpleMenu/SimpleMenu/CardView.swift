@@ -9,20 +9,19 @@
 import SwiftUI
 
 struct CardView: View {
-    
     //MARK: - Properties
-    var gradient : [Color] = [Color("Color01"),Color("Color02")]
+    var card: Card
     // MARK: - Card
     var body: some View {
         ZStack {
-            Image("developer-no1")
+            Image(card.imageName)
             VStack {
-                Text("Swift UI")
+                Text(card.title)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
-                Text("Better apps. Less code")
+                Text(card.headline)
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                     .italic()
@@ -31,7 +30,7 @@ struct CardView: View {
                 print("Button was tapped")
             }) {
                 HStack {
-                    Text("Learn".uppercased())
+                    Text(card.callToAction.uppercased())
                         .fontWeight(.heavy)
                         .accentColor(Color.white)
                         .foregroundColor(Color.white)
@@ -41,7 +40,7 @@ struct CardView: View {
                 }
                 .padding(.vertical)
                 .padding(.horizontal, 24)
-                .background(LinearGradient(gradient: Gradient(colors: gradient),
+                .background(LinearGradient(gradient: Gradient(colors: card.gradientColors),
                                            startPoint: .leading,
                                            endPoint: .trailing))
                 .clipShape(Capsule())
@@ -50,7 +49,7 @@ struct CardView: View {
             .offset(y: 210)
         }
         .frame(width: 335, height: 545)
-        .background(LinearGradient(gradient: Gradient(colors: gradient),
+        .background(LinearGradient(gradient: Gradient(colors: card.gradientColors),
                                    startPoint: .top,
                                    endPoint: .bottom))
         .cornerRadius(26)
@@ -62,6 +61,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView().previewLayout(.sizeThatFits)
+        CardView(card: cardData[2]).previewLayout(.sizeThatFits)
     }
 }
