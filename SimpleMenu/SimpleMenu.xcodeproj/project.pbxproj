@@ -15,6 +15,7 @@
 		BDEE5751240B11AA00842736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEE574F240B11AA00842736 /* LaunchScreen.storyboard */; };
 		BDEE5759240B165900842736 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE5758240B165900842736 /* CardView.swift */; };
 		BDEE575B240B1B1100842736 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE575A240B1B1100842736 /* CardModel.swift */; };
+		BDEE575D240B1B7B00842736 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE575C240B1B7B00842736 /* CardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BDEE5752240B11AA00842736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDEE5758240B165900842736 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		BDEE575A240B1B1100842736 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		BDEE575C240B1B7B00842736 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BDEE574C240B11AA00842736 /* Preview Content */,
 				BDEE5758240B165900842736 /* CardView.swift */,
 				BDEE575A240B1B1100842736 /* CardModel.swift */,
+				BDEE575C240B1B7B00842736 /* CardData.swift */,
 			);
 			path = SimpleMenu;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				BDEE5745240B11A800842736 /* AppDelegate.swift in Sources */,
 				BDEE5747240B11A800842736 /* SceneDelegate.swift in Sources */,
 				BDEE5759240B165900842736 /* CardView.swift in Sources */,
+				BDEE575D240B1B7B00842736 /* CardData.swift in Sources */,
 				BDEE5749240B11A800842736 /* ContentView.swift in Sources */,
 				BDEE575B240B1B1100842736 /* CardModel.swift in Sources */,
 			);
