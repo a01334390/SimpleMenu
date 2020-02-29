@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - Content
     var body: some View {
-        Text("Hello, World!")
+        CardView()
     }
 }
+
+//MARK: - Preview
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
